@@ -4,6 +4,7 @@ import "./globals.css";
 import Providers from "./providers";
 import { Toaster } from "sonner";
 import { Suspense } from "react";
+import Navbar from "@/components/ui/navbar";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -26,7 +27,7 @@ export default function RootLayout({
         <body className={`${dmSans.className}`}>
           <Providers>
               <div className="root-layout">
-                Navbar
+                <Navbar/>
                 {children}
                 Footer
               </div>
