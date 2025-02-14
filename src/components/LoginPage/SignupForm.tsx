@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const SignupForm: React.FC = () => {
-  const [name, setName] = useState<string>("");
+  const [username, setUsername] = useState<string>("");
   const [email, setEmail] = useState<string>("");
   const [password, setPassword] = useState<string>("");
 
@@ -18,19 +18,19 @@ const SignupForm: React.FC = () => {
               <form className="mt-12" action="" method="POST">
                 <div className="relative">
                   <input
-                    id="name"
-                    name="name"
+                    id="username"
+                    name="username"
                     type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
+                    value={username}
+                    onChange={(e) => setUsername(e.target.value)}
                     className="peer h-10 w-full border-b-2 border-gray-300 text-gray-900 placeholder-transparent focus:outline-none focus:border-indigo-600"
-                    placeholder="Name"
+                    placeholder="Username"
                   />
                   <label
                     htmlFor="name"
                     className="absolute left-0 -top-3.5 text-gray-600 text-sm transition-all peer-placeholder-shown:text-base peer-placeholder-shown:text-gray-400 peer-placeholder-shown:top-2 peer-focus:-top-3.5 peer-focus:text-gray-600 peer-focus:text-sm"
                   >
-                    Name
+                    Username
                   </label>
                 </div>
                 <div className="mt-10 relative">
@@ -71,7 +71,7 @@ const SignupForm: React.FC = () => {
                 <input
                   type="submit"
                   value="Sign up"
-                  className="mt-20 px-8 py-4 uppercase rounded-full bg-sky-950 hover:bg-indigo-500 text-white-100 font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-80 cursor-pointer"
+                  className="mt-20 px-8 py-4 uppercase rounded-full bg-sky-950 hover:bg-sky-900 text-white-100 font-semibold text-center block w-full focus:outline-none focus:ring focus:ring-offset-2 focus:ring-indigo-500 focus:ring-opacity-80 cursor-pointer"
                 />
               </form>
             </div>
