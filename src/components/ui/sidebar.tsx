@@ -1,7 +1,19 @@
-import { useState } from "react";
+import { useState, JSX } from "react";
 import { FaAngleDown, FaAngleRight } from "react-icons/fa";
 
-const sidebarData = [
+type Api = {
+    method: string;
+    name: string;
+    path: string;
+    details: string;
+};
+
+type Section = {
+    title: string;
+    apis: Api[];
+};
+
+const sidebarData: Section[] = [
     {
         title: "CA Certificates",
         apis: [
@@ -35,7 +47,7 @@ const sidebarData = [
     },
 ];
 
-const methodColors = {
+const methodColors: { [key: string]: string } = {
     GET: "bg-blue-500",
     POST: "bg-green-500",
     DELETE: "bg-red-500",
@@ -44,10 +56,10 @@ const methodColors = {
 };
 
 export default function Sidebar() {
-    const [openSections, setOpenSections] = useState({});
-    const [selectedApi, setSelectedApi] = useState(null);
+    const [openSections, setOpenSections] = useState<{ [key: string]: boolean }>({});
+    const [selectedApi, setSelectedApi] = useState<Api | null>(null);
 
-    const toggleSection = (title) => {
+    const toggleSection = (title: string) => {
         setOpenSections((prev) => ({ ...prev, [title]: !prev[title] }));
     };
 
