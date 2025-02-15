@@ -1,0 +1,9 @@
+diff a/package.json b/package.json	(rejected hunks)
+@@ -10,6 +10,7 @@
+   },
+   "dependencies": {
+     "@hookform/resolvers": "^3.10.0",
++    "@radix-ui/react-navigation-menu": "^1.2.5",
+     "@radix-ui/react-slot": "^1.1.2",
+     "@reduxjs/toolkit": "^2.5.1",
+     "async-mutex": "^0.5.0",
