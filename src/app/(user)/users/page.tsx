@@ -178,7 +178,7 @@ const UserManagement = () => {
         pageNum={pageNum}
         totalPage={totalPage}
         onPageChange={handlePageChange}
-      />
+        pageSize={pageSize}      />
     </div>
   );
 };
