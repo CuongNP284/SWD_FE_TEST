@@ -64,7 +64,7 @@ export default function Sidebar() {
     };
 
     return (
-        <div className="w-64 bg-gray-100 p-4 shadow-md h-screen overflow-auto">
+        <div className="w-64 bg-gray-100 p-4 shadow-md h-auto overflow-auto">
             <h2 className="text-lg font-bold mb-4">Gateway Admin - EE</h2>
             {sidebarData.map((section, index) => (
                 <div key={index} className="mb-2">
