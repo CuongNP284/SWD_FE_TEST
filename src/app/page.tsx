@@ -5,8 +5,10 @@ import { useInstropectMutation } from "@/state/api/authApi";
 import { cookieUtils } from "@/utils/cookies";
 import { number } from "zod";
 import { store } from "./store/store";
-import Sidebar from "@/components/ui/sidebar";
 import { Provider } from "react-redux";
+
+import Sidebar from "@/components/ui/sidebar";
+import Homepage from '@/components/Homepage/Homepage'
 
 export default function Home() {
   const [instropect] = useInstropectMutation();
@@ -24,6 +26,7 @@ export default function Home() {
       <Provider store={store}>
         <div className="flex">
           <Sidebar />
+          <Homepage/>
         </div>
       </Provider>
 
