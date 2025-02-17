@@ -157,7 +157,7 @@ const SignIn: React.FC = () => {
     //   </div>
     // </div>
 
-    <div className="flex flex-col items-center justify-center h-screen w-screen bg-gray-50">
+    <div className="flex flex-col min-h-screen items-center justify-center h-screen w-full bg-gray-50">
       <LoginPage />
     </div>
   );

@@ -7,7 +7,7 @@ type LeftOverlayContentProps = {
 
 const LeftOverlayContent: React.FC<LeftOverlayContentProps> = ({ isAnimated, setIsAnimated }) => {
   return (
-    <div className="p-8 text-center">
+    <div className="p-8 text-center overflow-hidden">
       <h1 className="text-6xl font-bold text-white-100 mb-4">
         Already have an account ?
       </h1>

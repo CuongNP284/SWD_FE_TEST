@@ -6,7 +6,7 @@ const SignupForm: React.FC = () => {
   const [password, setPassword] = useState<string>("");
 
   return (
-    <div className="selection:bg-indigo-500 selection:text-white-100">
+    <div className="selection:bg-indigo-500 overflow-hidden selection:text-white-100">
       <div className="flex justify-center items-center">
         <div className="p-8 flex-1">
           <div className="mx-auto overflow-hidden">

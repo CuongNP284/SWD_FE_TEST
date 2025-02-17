@@ -32,7 +32,7 @@ const SigninForm: React.FC = () => {
   };
 
   return (
-    <div className="selection:bg-indigo-500 selection:text-white">
+    <div className="selection:bg-indigo-500 overflow-hidden selection:text-white">
       <div className="flex justify-center items-center">
         <div className="p-8 flex-1">
           <div className="mx-auto overflow-hidden">
